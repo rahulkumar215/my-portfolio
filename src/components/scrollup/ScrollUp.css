@@ -1,17 +1,17 @@
 .scrollup {
   position: fixed;
-  right: 2.5rem;
+  right: 4rem;
   bottom: -20%;
   background-color: var(--title-color);
   opacity: 0.8;
-  padding: 0.3rem 0.5rem;
-  border-radius: 0.4rem;
+  padding: 0.48rem 0.8rem;
+  border-radius: 0.64rem;
   z-index: var(--z-tooltip);
   transition: 0.4s;
 }
 
 .scrollup__icon {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   color: var(--container-color);
 }
 
@@ -21,29 +21,29 @@
 
 /* Show Scroll */
 .show-scroll {
-  bottom: 3rem;
+  bottom: 4.8rem;
 }
 
 /*=============== BREAKPOINTS ===============*/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 62em) {
   .scrollup {
-    right: 1.5rem;
-    padding: 0.25rem 0.4rem;
+    right: 2.4rem;
+    padding: 0.4rem 0.64rem;
   }
 
   .scrollup__icon {
-    font-size: 1.25rem;
+    font-size: 2rem;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .show-scroll {
-    bottom: 4rem;
+    bottom: 6.4rem;
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 21.87em) {
   .scrollup {
-    right: 1rem;
+    right: 1.6rem;
   }
 }
