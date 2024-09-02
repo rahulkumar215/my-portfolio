@@ -2,7 +2,12 @@ import React from "react";
 
 const WorksItems = ({ item }) => {
   return (
-    <div className="work__card" key={item.id}>
+    <div
+      className={`work__card ${
+        item.id % 2 === 0 ? "work__card-right" : "work__card-left"
+      }`}
+      key={item.id}
+    >
       <img src={item.image} alt="" className="work__img" />
       <h3 className="work__title">{item.title}</h3>
       <a href="#home" className="work__button">

@@ -3,11 +3,9 @@ import { projectsData } from "./Data";
 import WorkItems from "./WorkItems";
 
 const Works = () => {
-  const [projects, setProjects] = useState(projectsData);
-
   return (
     <div className="work__container container grid">
-      {projects.map((item) => {
+      {projectsData.map((item) => {
         return <WorkItems item={item} key={item.id} />;
       })}
     </div>

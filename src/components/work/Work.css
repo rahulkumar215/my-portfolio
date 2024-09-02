@@ -1,7 +1,6 @@
 .work__container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  gap: 4.8rem;
   justify-content: center;
 }
 
@@ -10,6 +9,14 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 2rem;
   border-radius: 1.6rem;
+}
+
+.work__card-left {
+  grid-column: 1 / span 5;
+}
+
+.work__card-right {
+  grid-column: 4 / span 5;
 }
 
 .work__img {
