@@ -1,53 +1,39 @@
-import Work1 from "../../assets/work1.jpg";
-import Work2 from "../../assets/work2.jpg";
-import Work3 from "../../assets/work3.jpg";
-import Work4 from "../../assets/work4.jpg";
-import Work5 from "../../assets/work5.jpg";
+import Work1 from "../../assets/dashboard-images/image1.webp";
+import Work2 from "../../assets/dashboard-images/image2.webp";
+import Work3 from "../../assets/dashboard-images/image3.webp";
+import Work4 from "../../assets/dashboard-images/image4.webp";
 
 export const projectsData = [
   {
     id: 1,
-    image: Work1,
-    title: "Web design",
-    category: "web",
+    bgImage: Work1,
+    title: "Attendance Automation",
+    description: "",
+    techUsed: [],
+    copyLink: "",
   },
   {
     id: 2,
-    image: Work2,
-    title: "App movil",
-    category: "app",
+    bgImage: Work2,
+    title: "Task Delegation System",
+    description: "",
+    techUsed: [],
+    copyLink: "",
   },
   {
     id: 3,
-    image: Work3,
-    title: "Brand design",
-    category: "design",
+    bgImage: Work3,
+    title: "Sales Lead System",
+    description: "",
+    techUsed: [],
+    copyLink: "",
   },
   {
     id: 4,
-    image: Work4,
-    title: "App movil",
-    category: "app",
-  },
-  {
-    id: 5,
-    image: Work5,
-    title: "Web design",
-    category: "web",
-  },
-];
-
-export const projectNav = [
-  {
-    name: "all",
-  },
-  {
-    name: "web",
-  },
-  {
-    name: "app",
-  },
-  {
-    name: "design",
+    bgImage: Work4,
+    title: "Flow Management System",
+    description: "",
+    techUsed: [],
+    copyLink: "",
   },
 ];

@@ -1,28 +1,6 @@
-.work__filters {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 1.2rem;
-  margin-bottom: var(--mb-2);
-}
-
-.work__item {
-  cursor: pointer;
-  color: var(--title-color);
-  padding: 0.4rem 1.2rem;
-  font-weight: var(--font-medium);
-  border-radius: 0.8rem;
-  text-transform: capitalize;
-  transition: 0.4s ease;
-}
-
-.work__item:hover {
-  background-color: var(--title-color);
-  color: var(--container-color);
-}
-
 .work__container {
-  grid-template-columns: repeat(2, max-content);
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
   gap: 4.8rem;
   justify-content: center;
 }
