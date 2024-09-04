@@ -6,6 +6,7 @@ import { ReactComponent as DriveIcon } from "../../assets/icons/drive.svg";
 import { ReactComponent as HtmlIcon } from "../../assets/icons/html.svg";
 import { ReactComponent as CssIcon } from "../../assets/icons/css.svg";
 import { ReactComponent as JavaScriptIcon } from "../../assets/icons/javascript.svg";
+import { ReactComponent as CopyIcon } from "../../assets/icons/copy.svg";
 
 const WorksItems = ({ item }) => {
   return (
@@ -16,7 +17,9 @@ const WorksItems = ({ item }) => {
       key={item.id}
     >
       <img src={item.bgImage} alt="" className={styles.workImg} />
-      <h1>{item.id}</h1>
+      <h1 className={item.id % 2 === 0 ? styles.left : styles.right}>
+        {item.id}
+      </h1>
       <h3 className={styles.workTitle}>{item.title}</h3>
       <p>{item.description}</p>
       <ul>
@@ -42,9 +45,10 @@ const WorksItems = ({ item }) => {
           </li>
         ))}
       </ul>
-      <a href="#home" className={styles.workButton}>
-        Demo
-        <i className={`bx bx-right-arrow-alt ${styles.workButtonIcon}`}></i>
+      <a href={item.copyLink} className={styles.workButton}>
+        <CopyIcon className={styles.copyIcon} />
+        Make A Copy
+        {/* <i className={`bx bx-right-arrow-alt ${styles.workButtonIcon}`}></i> */}
       </a>
     </div>
   );

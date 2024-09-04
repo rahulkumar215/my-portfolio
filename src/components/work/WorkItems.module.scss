@@ -1,15 +1,18 @@
+@import "../../App.scss";
+
 .workCard {
   border-radius: 1.6rem;
   position: relative;
-  width: 59.4rem;
-  height: 33.4rem;
+  // width: 59.4rem;
+  height: 45rem;
   cursor: pointer;
-  padding: 2rem;
+  padding: 2rem 4rem;
   background-color: rgba(0, 0, 0, 0.7);
   box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 0.5);
   color: var(--color-white);
 
   display: grid;
+  align-items: center;
 
   .workImg {
     position: absolute;
@@ -24,9 +27,34 @@
   }
 
   h1 {
-    font-size: 10rem;
+    position: absolute;
+    top: -8rem;
+    font-size: 16rem;
+    font-weight: 700;
     color: var(--color-white);
-    justify-self: end;
+    background: none;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+    &.right {
+      right: -3rem;
+    }
+
+    &.left {
+      left: -3rem;
+    }
+  }
+
+  .workTitle {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--color-white);
+    align-self: end;
+  }
+
+  p {
+    font-size: 1.8rem;
+    width: 80%;
+    opacity: 0.8;
   }
 
   ul {
@@ -53,76 +81,85 @@
     height: 2.5rem;
   }
 
-  .workTitle {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-0-5);
-    color: var(--color-white);
-  }
-
   .workButton {
-    color: var(--text-color);
-    font-size: var(--small-font-size);
+    width: fit-content;
+    padding: 1rem 2.5rem;
+    border-radius: 10rem;
+    font-weight: var(--font-semi-bold);
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-size: var(--normal-font-size);
     display: flex;
     align-items: center;
-    column-gap: 0.4rem;
+    column-gap: 1rem;
+
+    .copyIcon {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 
-  .workButtonIcon {
-    font-size: 1.6rem;
-    transition: 0.4s;
-  }
+  @media screen and (max-width: $bp-largest) {
+    height: 35rem;
 
-  .workButton:hover .workButtonIcon {
-    transform: translateX(0.4rem);
-  }
+    h1 {
+      top: -6rem;
+      font-size: 12rem;
+      font-weight: 700;
 
-  /* Active Wrok */
-  .activeWork {
-    background-color: var(--title-color);
-    color: var(--container-color);
+      &.right {
+        right: -2rem;
+      }
+
+      &.left {
+        left: -2rem;
+      }
+    }
+
+    p {
+      font-size: var(--normal-font-size);
+    }
+
+    ul {
+      grid-template-columns: repeat(3, min-content);
+    }
+
+    .workButton {
+      padding: 0.5rem 1.2rem;
+    }
   }
 }
 
 .workCardLeft {
-  grid-column: 1 / span 5;
+  grid-column: 1 / span 7;
+
+  .workTitle,
+  p,
+  ul,
+  .workButton {
+    justify-self: start;
+  }
 }
 
 .workCardRight {
-  grid-column: 4 / span 5;
+  grid-column: 2 / -1;
+
+  .workTitle,
+  p,
+  ul,
+  .workButton {
+    justify-self: end;
+  }
+
+  p {
+    text-align: right;
+  }
 }
 
 /*=============== BREAKPOINTS ===============*/
-@media screen and (max-width: 62em) {
-  .workCard {
-    gap: 2rem;
-  }
-
-  .workCard {
-    padding: 1.6rem;
-  }
-
-  .workImg {
-    margin-bottom: 1.2rem;
-  }
-
-  .workTitle {
-    margin-bottom: 0.4rem;
-  }
-}
-
-@media screen and (max-width: 36em) {
-  .workImg {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 21.87em) {
-  .workItem {
-    font-size: var(--small-font-size);
-  }
-
-  .workFilters {
-    column-gap: 0.4rem;
+@media screen and (max-width: $bp-largest) {
+  .workCardLeft,
+  .workCardRight {
+    grid-column: 2 / span 6;
   }
 }
