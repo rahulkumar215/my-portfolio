@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./WorkItems.module.scss";
-import SheetsIcon from "../../assets/icons/sheets.svg";
-import AppScriptIcon from "../../assets/icons/appscript.svg";
-import DriveIcon from "../../assets/icons/drive.svg";
-import HtmlIcon from "../../assets/icons/html.svg";
-import CssIcon from "../../assets/icons/css.svg";
-import JavaScriptIcon from "../../assets/icons/javascript.svg";
+import { ReactComponent as SheetsIcon } from "../../assets/icons/sheets.svg";
+import { ReactComponent as AppScriptIcon } from "../../assets/icons/appsscript.svg";
+import { ReactComponent as DriveIcon } from "../../assets/icons/drive.svg";
+import { ReactComponent as HtmlIcon } from "../../assets/icons/html.svg";
+import { ReactComponent as CssIcon } from "../../assets/icons/css.svg";
+import { ReactComponent as JavaScriptIcon } from "../../assets/icons/javascript.svg";
 
 const WorksItems = ({ item }) => {
   return (
@@ -21,7 +21,25 @@ const WorksItems = ({ item }) => {
       <p>{item.description}</p>
       <ul>
         {item.techUsed.map((item) => (
-          <li>{item.name}</li>
+          <li>
+            <span>
+              {item.name === "Google Sheets" && (
+                <SheetsIcon className={styles.workIcon} />
+              )}
+              {item.name === "Google Drive" && (
+                <DriveIcon className={styles.workIcon} />
+              )}
+              {item.name === "Apps Script" && (
+                <AppScriptIcon className={styles.workIcon} />
+              )}
+              {item.name === "HTML" && <HtmlIcon className={styles.workIcon} />}
+              {item.name === "CSS" && <CssIcon className={styles.workIcon} />}
+              {item.name === "JavaScript" && (
+                <JavaScriptIcon className={styles.workIcon} />
+              )}
+            </span>
+            {item.name}
+          </li>
         ))}
       </ul>
       <a href="#home" className={styles.workButton}>
