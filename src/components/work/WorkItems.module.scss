@@ -1,37 +1,41 @@
-.work__container {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  justify-content: center;
-}
-
-.work__card {
-  background-color: var(--container-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 2rem;
+.workCard {
   border-radius: 1.6rem;
+  position: relative;
+  width: 59.4rem;
+  height: 33.4rem;
+  cursor: pointer;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 0.5);
 }
 
-.work__card-left {
+.workCardLeft {
   grid-column: 1 / span 5;
 }
 
-.work__card-right {
+.workCardRight {
   grid-column: 4 / span 5;
 }
 
-.work__img {
-  width: 29.5rem;
+.workImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-radius: 1.6rem;
   margin-bottom: var(--mb-1);
+  z-index: -1;
 }
 
-.work__title {
+.workTitle {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-5);
+  color: var(--color-white);
 }
 
-.work__button {
+.workButton {
   color: var(--text-color);
   font-size: var(--small-font-size);
   display: flex;
@@ -39,62 +43,52 @@
   column-gap: 0.4rem;
 }
 
-.work__button-icon {
+.workButtonIcon {
   font-size: 1.6rem;
   transition: 0.4s;
 }
 
-.work__button:hover .work__button-icon {
+.workButton:hover .workButtonIcon {
   transform: translateX(0.4rem);
 }
 
 /* Active Wrok */
-.active-work {
+.activeWork {
   background-color: var(--title-color);
   color: var(--container-color);
 }
 
 /*=============== BREAKPOINTS ===============*/
 @media screen and (max-width: 62em) {
-  .work__card {
+  .workCard {
     gap: 2rem;
   }
 
-  .work__card {
+  .workCard {
     padding: 1.6rem;
   }
 
-  .work__img {
+  .workImg {
     margin-bottom: 1.2rem;
   }
 
-  .work__title {
+  .workTitle {
     margin-bottom: 0.4rem;
   }
 }
 
-@media screen and (max-width: 48em) {
-  .work__container {
-    grid-template-columns: max-content;
-  }
-}
-
 @media screen and (max-width: 36em) {
-  .work__container {
-    grid-template-columns: 1fr;
-  }
-
-  .work__img {
+  .workImg {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 21.87em) {
-  .work__item {
+  .workItem {
     font-size: var(--small-font-size);
   }
 
-  .work__filters {
+  .workFilters {
     column-gap: 0.4rem;
   }
 }

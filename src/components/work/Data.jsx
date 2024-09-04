@@ -5,35 +5,106 @@ import Work4 from "../../assets/dashboard-images/image4.webp";
 
 export const projectsData = [
   {
-    id: 1,
+    id: "01",
     bgImage: Work1,
     title: "Attendance Automation",
-    description: "",
-    techUsed: [],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    techUsed: [
+      {
+        name: "Google Sheet",
+      },
+      {
+        name: "Google Drive",
+      },
+      {
+        name: "Apps Script",
+      },
+    ],
     copyLink: "",
   },
   {
-    id: 2,
+    id: "02",
     bgImage: Work2,
     title: "Task Delegation System",
-    description: "",
-    techUsed: [],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    techUsed: [
+      {
+        name: "Google Sheet",
+      },
+      {
+        name: "Google Drive",
+      },
+      {
+        name: "Apps Script",
+      },
+      {
+        name: "HTML",
+      },
+      {
+        name: "CSS",
+      },
+      {
+        name: "JavsScript",
+      },
+    ],
     copyLink: "",
   },
   {
-    id: 3,
+    id: "03",
     bgImage: Work3,
     title: "Sales Lead System",
-    description: "",
-    techUsed: [],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    techUsed: [
+      {
+        name: "Google Sheet",
+      },
+      {
+        name: "Google Drive",
+      },
+      {
+        name: "Apps Script",
+      },
+      {
+        name: "HTML",
+      },
+      {
+        name: "CSS",
+      },
+      {
+        name: "JavsScript",
+      },
+    ],
     copyLink: "",
   },
   {
-    id: 4,
+    id: "04",
     bgImage: Work4,
     title: "Flow Management System",
-    description: "",
-    techUsed: [],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    techUsed: [
+      {
+        name: "Google Sheet",
+      },
+      {
+        name: "Google Drive",
+      },
+      {
+        name: "Apps Script",
+      },
+      {
+        name: "HTML",
+      },
+      {
+        name: "CSS",
+      },
+      {
+        name: "JavsScript",
+      },
+    ],
     copyLink: "",
   },
 ];
