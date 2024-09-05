@@ -1,0 +1,39 @@
+.home {
+  &Scroll {
+    margin-left: 14.8rem;
+
+    @media screen and (max-width: 62em) {
+      margin-left: 12rem;
+    }
+
+    @media screen and (max-width: 48em) {
+      display: none;
+    }
+  }
+
+  &ScrollName {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin-right: var(--mb-0-25);
+    margin-left: 2px;
+  }
+
+  &ScrollArrow {
+    font-size: 2rem;
+    color: var(--title-color);
+  }
+}
+
+.wheel {
+  animation: scroll 2s ease infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(6rem);
+  }
+}

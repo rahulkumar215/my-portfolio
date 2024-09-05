@@ -3,16 +3,14 @@
   grid-template-columns: repeat(8, 1fr);
   justify-content: center;
   row-gap: 10rem;
-}
 
-@media screen and (max-width: 48em) {
-  .workContainer {
-    grid-template-columns: max-content;
-  }
-}
-
-@media screen and (max-width: 36em) {
-  .workContainer {
+  @media screen and (max-width: 48em) {
     grid-template-columns: 1fr;
   }
 }
+
+// @media screen and (max-width: 36em) {
+//   .workContainer {
+//     grid-template-columns: 1fr;
+//   }
+// }

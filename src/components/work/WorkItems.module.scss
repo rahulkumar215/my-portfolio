@@ -14,6 +14,19 @@
   display: grid;
   align-items: center;
 
+  @media screen and (max-width: $bp-largest) {
+    height: 35rem;
+  }
+
+  @media screen and (max-width: 36em) {
+    padding: 1rem 2rem;
+  }
+
+  @media screen and (max-width: 31.25em) {
+    height: 30rem;
+    padding: 1rem;
+  }
+
   .workImg {
     position: absolute;
     top: 0;
@@ -35,12 +48,34 @@
     background: none;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 
+    @media screen and (max-width: $bp-largest) {
+      top: -6rem;
+      font-size: 12rem;
+      font-weight: 700;
+    }
+
+    @media screen and (max-width: 36em) {
+      font-size: 10rem;
+    }
+
+    @media screen and (max-width: 31.25em) {
+      display: none;
+    }
+
     &.right {
       right: -3rem;
+
+      @media screen and (max-width: $bp-largest) {
+        right: -2rem;
+      }
     }
 
     &.left {
       left: -3rem;
+
+      @media screen and (max-width: $bp-largest) {
+        left: -2rem;
+      }
     }
   }
 
@@ -55,6 +90,15 @@
     font-size: 1.8rem;
     width: 80%;
     opacity: 0.8;
+
+    @media screen and (max-width: $bp-largest) {
+      font-size: var(--normal-font-size);
+    }
+
+    @media screen and (max-width: 36em) {
+      font-size: var(--small-font-size);
+      width: 100%;
+    }
   }
 
   ul {
@@ -63,15 +107,37 @@
     grid-template-columns: repeat(2, min-content);
     gap: 1rem;
 
+    @media screen and (max-width: $bp-largest) {
+      grid-template-columns: repeat(3, min-content);
+    }
+
+    @media screen and (max-width: 31.25em) {
+      grid-template-columns: repeat(6, min-content);
+      grid-template-rows: 1fr;
+    }
+
     li {
       display: grid;
       align-items: center;
       grid-template-columns: repeat(2, max-content);
       gap: 0.5rem;
 
+      @media screen and (max-width: 36em) {
+        font-size: var(--small-font-size);
+      }
+
       span {
         display: grid;
         align-items: center;
+      }
+
+      p {
+        width: 100%;
+        opacity: 1;
+
+        @media screen and (max-width: 31.25em) {
+          display: none;
+        }
       }
     }
   }
@@ -79,6 +145,16 @@
   .workIcon {
     width: 2.5rem;
     height: 2.5rem;
+
+    @media screen and (max-width: 36em) {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    @media screen and (max-width: 31.25em) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   }
 
   .workButton {
@@ -93,39 +169,28 @@
     align-items: center;
     column-gap: 1rem;
 
+    @media screen and (max-width: $bp-largest) {
+      padding: 0.5rem 1.2rem;
+    }
+
+    @media screen and (max-width: 36em) {
+      font-size: var(--small-font-size);
+    }
+
+    @media screen and (max-width: 31.25em) {
+      font-size: var(--smaller-font-size);
+      column-gap: 0.5rem;
+      padding: 0.25rem 0.7rem;
+    }
+
     .copyIcon {
       width: 2rem;
       height: 2rem;
-    }
-  }
 
-  @media screen and (max-width: $bp-largest) {
-    height: 35rem;
-
-    h1 {
-      top: -6rem;
-      font-size: 12rem;
-      font-weight: 700;
-
-      &.right {
-        right: -2rem;
+      @media screen and (max-width: 31.25em) {
+        width: 1.5rem;
+        height: 1.5rem;
       }
-
-      &.left {
-        left: -2rem;
-      }
-    }
-
-    p {
-      font-size: var(--normal-font-size);
-    }
-
-    ul {
-      grid-template-columns: repeat(3, min-content);
-    }
-
-    .workButton {
-      padding: 0.5rem 1.2rem;
     }
   }
 }
@@ -161,5 +226,28 @@
   .workCardLeft,
   .workCardRight {
     grid-column: 2 / span 6;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .workCardLeft,
+  .workCardRight {
+    grid-column: 1 / -1;
+  }
+}
+
+@media screen and (max-width: 31.25em) {
+  .workCardLeft,
+  .workCardRight {
+    .workTitle,
+    p,
+    ul,
+    .workButton {
+      justify-self: start;
+    }
+
+    p {
+      text-align: left;
+    }
   }
 }

@@ -1,11 +1,12 @@
 import React from "react";
+import styles from "./Social.module.scss";
 
 const Social = () => {
   return (
-    <div className="home__social">
+    <div className={styles.homeSocial}>
       <a
         href="https://www.linkedin.com/in/rahul-kumar-70841116a/"
-        className="home__social-icon"
+        className={styles.homeSocialIcon}
         target="_blank"
         rel="noreferrer"
       >
@@ -13,7 +14,7 @@ const Social = () => {
       </a>
       <a
         href="https://twitter.com/Rahul_Kumar010"
-        className="home__social-icon"
+        className={styles.homeSocialIcon}
         target="_blank"
         rel="noreferrer"
       >
@@ -21,7 +22,7 @@ const Social = () => {
       </a>
       <a
         href="https://github.com/rahulkumar215"
-        className="home__social-icon"
+        className={styles.homeSocialIcon}
         target="_blank"
         rel="noreferrer"
       >

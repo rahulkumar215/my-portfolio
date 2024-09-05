@@ -1,17 +1,18 @@
 import React from "react";
+import styles from "./Data.module.scss";
 
 const Data = () => {
   return (
-    <div className="home__data">
-      <h1 className="home__title">
+    <div className={styles.homeData}>
+      <h1 className={styles.homeTitle}>
         Rahul Vishwakarma
-        <svg
+        {/* <svg
           width="36"
           height="36"
           viewBox="0 0 48 48"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="home__hand"
+          class={styles.homeHand}
         >
           <path
             d="M25.4995 32.0305L31.3495 33.1555L36.1495 8.48051C36.4495 6.83051 35.3995 5.18051 33.8245 4.88051C32.1745 4.58051 30.5995 5.70551 30.2995 7.35551L25.4995 32.0305Z"
@@ -53,11 +54,11 @@ const Data = () => {
             d="M46.2745 22.28C46.0495 21.83 45.7495 21.53 45.3745 21.23C45.4495 21.305 45.5245 21.38 45.5245 21.53C46.7995 24.08 42.6745 26.405 40.1995 29.405C38.1745 31.88 35.9245 33.83 34.7995 36.455C29.9995 47.93 16.0495 47.93 10.1995 42.68C15.5245 48.68 30.5245 49.28 35.5495 37.205C36.6745 34.58 38.9245 32.63 40.9495 30.155C43.4245 27.155 47.5495 24.755 46.2745 22.28ZM32.3245 28.13C27.4495 26.33 18.7495 29.63 19.9495 38.405C19.9495 30.23 27.3745 28.205 31.4245 28.205C32.0245 28.13 32.3245 28.13 32.3245 28.13Z"
             fill="#EBA352"
           ></path>
-        </svg>
+        </svg> */}
       </h1>
 
-      <h3 className="home__subtitle">Web Developer</h3>
-      <p className="home__description">
+      <h3 className={styles.homeSubtitle}>Web Developer</h3>
+      <p className={styles.homeDescription}>
         I'm a web developer skilled in HTML, CSS, JavaScript, React, and Google
         Script for enhanced functionality and streamlined processes.
       </p>

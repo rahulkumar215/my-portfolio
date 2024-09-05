@@ -1,14 +1,15 @@
 /* eslint-disable react/style-prop-object */
 import React from "react";
+import styles from "./ScrollDown.module.scss";
 
 const ScrollDown = () => {
   return (
-    <div className="home__scroll">
-      <a href="#about" className="home__scroll-button button--flex">
+    <div className={styles.homeScroll}>
+      <a href="#about" className={`${styles.homeScrollButton} button--flex`}>
         <svg
           width="32px"
           height="32px"
-          class="home__scroll-mouse"
+          class={styles.homeScrollMouse}
           viewBox="0 0 247 390"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +24,7 @@ const ScrollDown = () => {
           }}
         >
           <path
-            class="wheel"
+            class={styles.wheel}
             d="M123.359,79.775l0,72.843"
             style={{
               fill: "none",
@@ -41,8 +42,8 @@ const ScrollDown = () => {
             }}
           ></path>
         </svg>
-        <span className="home__scroll-name">Scroll Down </span>
-        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+        <span className={styles.homeScrollName}>Scroll Down </span>
+        <i class={`uil uil-arrow-down ${styles.homeScrollArrow}`}></i>
       </a>
     </div>
   );

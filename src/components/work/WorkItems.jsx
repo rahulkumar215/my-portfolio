@@ -41,7 +41,7 @@ const WorksItems = ({ item }) => {
                 <JavaScriptIcon className={styles.workIcon} />
               )}
             </span>
-            {item.name}
+            <p>{item.name}</p>
           </li>
         ))}
       </ul>

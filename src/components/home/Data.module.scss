@@ -1,0 +1,67 @@
+.home {
+  &Data {
+    @media screen and (max-width: 48em) {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 2;
+      align-self: center;
+    }
+
+    @media screen and (max-width: 36em) {
+      grid-row: 2 / span 1;
+      grid-column: 1 / -1;
+    }
+  }
+
+  &Title {
+    font-size: var(--big-font-size);
+    margin-bottom: var(--mb-0-25);
+  }
+
+  &Hand {
+    width: 3.8rem;
+    height: 3.8rem;
+    margin-left: 0.64rem;
+
+    @media screen and (max-width: 62em) {
+      width: 2.6rem;
+      height: 2.6rem;
+    }
+
+    @media screen and (max-width: 21.87em) {
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+  }
+
+  &Subtitle {
+    position: relative;
+    font-size: var(--h3-font-size);
+    padding-left: 8.64rem;
+    font-weight: var(--font-normal);
+    margin-bottom: var(--mb-1);
+
+    @media screen and (max-width: 62em) {
+      padding-left: 6rem;
+      margin-bottom: var(--mb-1);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 7rem;
+      height: 1px;
+      background-color: var(--text-color);
+      left: 0;
+      top: 50%;
+
+      @media screen and (max-width: 62em) {
+        width: 4.2rem;
+      }
+    }
+  }
+
+  &Description {
+    max-width: 40rem;
+    margin-bottom: var(--mb-3);
+  }
+}
