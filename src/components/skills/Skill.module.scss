@@ -1,0 +1,23 @@
+:global(.skill-icon) {
+  width: 7.5rem;
+  height: 7.5rem;
+  //   justify-self: center;
+  transition: all 0.5s ease;
+
+  @media screen and (max-width: 31.25em) {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  &:hover {
+    transform: translateY(-1rem);
+
+    @media screen and (max-width: 31.25em) {
+      transform: none;
+    }
+  }
+}
+
+.skill {
+  cursor: pointer;
+}

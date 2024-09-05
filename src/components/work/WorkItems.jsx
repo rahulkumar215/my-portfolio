@@ -23,8 +23,8 @@ const WorksItems = ({ item }) => {
       <h3 className={styles.workTitle}>{item.title}</h3>
       <p>{item.description}</p>
       <ul>
-        {item.techUsed.map((item) => (
-          <li>
+        {item.techUsed.map((item, i) => (
+          <li key={i}>
             <span>
               {item.name === "Google Sheets" && (
                 <SheetsIcon className={styles.workIcon} />
