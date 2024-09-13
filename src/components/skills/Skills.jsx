@@ -1,6 +1,6 @@
 import React from "react";
-import Frontend from "./Frontend";
-import Backend from "./Backend";
+// import Frontend from "./Frontend";
+// import Backend from "./Backend";
 import "./Skills.module.scss";
 import { ReactComponent as SheetsIcon } from "../../assets/icons/sheets.svg";
 import { ReactComponent as AppScriptIcon } from "../../assets/icons/appsscript.svg";
