@@ -1,7 +1,7 @@
 import Work1 from "../../assets/dashboard-images/image1.webp";
 import Work2 from "../../assets/dashboard-images/image2.webp";
 import Work3 from "../../assets/dashboard-images/image3.webp";
-import Work4 from "../../assets/dashboard-images/image4.webp";
+// import Work4 from "../../assets/dashboard-images/image4.webp";
 
 export const projectsData = [
   {
