@@ -79,32 +79,32 @@ export const projectsData = [
     ],
     copyLink: "",
   },
-  {
-    id: "04",
-    bgImage: Work4,
-    title: "Flow Management System",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    techUsed: [
-      {
-        name: "Google Sheets",
-      },
-      {
-        name: "Google Drive",
-      },
-      {
-        name: "Apps Script",
-      },
-      {
-        name: "HTML",
-      },
-      {
-        name: "CSS",
-      },
-      {
-        name: "JavaScript",
-      },
-    ],
-    copyLink: "",
-  },
+  // {
+  //   id: "04",
+  //   bgImage: Work4,
+  //   title: "Flow Management System",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  //   techUsed: [
+  //     {
+  //       name: "Google Sheets",
+  //     },
+  //     {
+  //       name: "Google Drive",
+  //     },
+  //     {
+  //       name: "Apps Script",
+  //     },
+  //     {
+  //       name: "HTML",
+  //     },
+  //     {
+  //       name: "CSS",
+  //     },
+  //     {
+  //       name: "JavaScript",
+  //     },
+  //   ],
+  //   copyLink: "",
+  // },
 ];
