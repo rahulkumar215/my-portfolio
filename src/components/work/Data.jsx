@@ -9,7 +9,7 @@ export const projectsData = [
     bgImage: Work1,
     title: "Attendance Automation",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "The Attendance Entry System is a streamlined solution built using Google Sheets and Google Apps Script to efficiently manage and track attendance records.",
     techUsed: [
       {
         name: "Google Sheets",
@@ -21,7 +21,8 @@ export const projectsData = [
         name: "Apps Script",
       },
     ],
-    copyLink: "",
+    copyLink:
+      "https://docs.google.com/spreadsheets/d/1CYBaCnNimoRh4JK1eqs1DWLBtkIwoOo7n-vkmANQ5BM/edit?usp=sharing",
   },
   {
     id: "02",

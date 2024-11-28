@@ -45,7 +45,7 @@ const WorksItems = ({ item }) => {
           </li>
         ))}
       </ul>
-      <a href={item.copyLink} className={styles.workButton}>
+      <a href={item.copyLink} target="blank" className={styles.workButton}>
         <CopyIcon className={styles.copyIcon} />
         Make A Copy
         {/* <i className={`bx bx-right-arrow-alt ${styles.workButtonIcon}`}></i> */}
