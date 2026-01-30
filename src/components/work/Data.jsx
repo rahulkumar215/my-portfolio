@@ -27,9 +27,9 @@ export const projectsData = [
   {
     id: "02",
     bgImage: Work2,
-    title: "Task Delegation System",
+    title: "Quotation System",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "The Quotation System is a streamlined solution built using Google Sheets and Google Apps Script to efficiently manage and track quotations.",
     techUsed: [
       {
         name: "Google Sheets",
@@ -40,24 +40,16 @@ export const projectsData = [
       {
         name: "Apps Script",
       },
-      {
-        name: "HTML",
-      },
-      {
-        name: "CSS",
-      },
-      {
-        name: "JavaScript",
-      },
     ],
-    copyLink: "",
+    copyLink:
+      "https://docs.google.com/spreadsheets/d/1MwldkjlLodfOEDgwzLe6JnqcDP12rDUQamkr2iWrWzM/edit?usp=sharing",
   },
   {
     id: "03",
     bgImage: Work3,
     title: "Sales Lead System",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "The Sales Lead System is a comprehensive solution built using Google Sheets and Google Apps Script to efficiently manage and track sales leads.",
     techUsed: [
       {
         name: "Google Sheets",
@@ -78,7 +70,8 @@ export const projectsData = [
         name: "JavaScript",
       },
     ],
-    copyLink: "",
+    copyLink:
+      "https://docs.google.com/spreadsheets/d/1wQwseXlNoo2huxdL75mZbtjD2NXmNy4AhfcojNilsgI/edit?usp=sharing",
   },
   // {
   //   id: "04",
